@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>5th Class</title>
+      <style>
+         *{
+         font-family: 'Trebuchet MS';	
+         margin: 0px;
+         }
+         body{
+         background-color:#f7f7f7;
+         }
+         .clearfix::after{
+         content:"";
+         display:table;
+         clear:both;
+         }
+         #header{
+         background-color:#e7e7e7;
+         padding-left:100px;
+         padding-right:100px;
+         height:80px;
+         }
+         #logo{
+         width:20%;
+         float:left;
+         padding-top:20px;
+         }
+         #menu{
+         width:60%;
+         float:right;
+         padding-top:12px;
+         }
+         #menu ul{
+         float:right;
+         margin-top: 15px;
+         }
+         #menu ul li{
+         float:left;
+         list-style-type:none;
+         margin-right:20px;
+         font-weight:600;
+         font-size:18px;
+         color: #504f4e;
+         }
+	#menu ul li:hover{
+          color: white;
+          cursor:pointer;
+         }
+         #main-image img{
+         width:100%;
+         }
+         #main-section{
+         padding-left:100px;
+         padding-right:100px;
+         }
+         .sub-items{
+         float:left;
+         width:23%;
+         margin-right:2.6%;
+         text-align:center;
+         }
+         .sub-items:last-child{
+         margin-right:0px;
+         }
+         #item-container{
+         margin-top:40px;
+         border-bottom:1px solid #cbc8c8;
+         padding-bottom:50px;
+         }
+         .sub-items h4{
+         color:#4e4e4e;
+         margin-top:15px;
+         margin-bottom:15px;
+         }
+         .sub-items p{
+         color:#6a6a6a;
+         }
+         #latest-work-heading{
+         color: #4e4e4e;
+         margin-top:30px;
+         margin-top:20px;
+         }
+         .project-items{
+         float:left;
+         margin-right:5%;
+         width:30%;
+         }
+         .project-items:last-child{
+         margin-right:0px;
+         }
+         .project-items h3{
+         color:#4e4e4e; 
+         margin-top:10px;
+         margin-bottom:10px;
+         }
+         .project-items h4{
+         color: #d1d0d0;
+         margin-bottom:10px;
+         }
+         .project-items p{
+         color:#6a6a6a; 
+         }
+         #project-container{
+         margin-top:20px;
+         }
+         #customer-review-container{
+         text-align:center;
+         background-color:#efefef;
+         margin-top:50px;
+         padding-top:50px;
+         padding-bottom:50px;
+         }
+         #customer-review-container img{
+         margin-bottom:10px;
+         }
+         #customer-review-container p{
+         color:#bcc2ca;
+         }
+         #footer{
+         background-color:#1f1f1f;
+         color:#cacaca;
+         padding-left:100px;
+         padding-right:100px;
+         padding-bottom:100px;
+         padding-top:50px;
+         }
+         .footer-items{
+         width:23%;
+         margin-right:2.6%;
+         float:left;
+         }
+         .footer-items h4{
+         color:#6c6c6c;
+         font-size:20px;
+         margin-bottom:20px;
+         }
+         .footer-items p{
+         margin-bottom:20px;
+         }
+         #sub-footer-container{
+         border-bottom:2px solid #353535;
+         padding-bottom:50px;
+         margin-bottom:20px;
+         }
+         .footer-items:last-child{
+         margin-right:0px;
+         } 
+         #footer-twitter-item p{
+         position:relative;
+         }
+         #footer-twitter-item p img{
+         position: absolute;
+         left: -18px;
+         top: 4px;
+         }
+         .project-items img{
+           width:100%;
+         }
+         @media(max-width:1140px){
+         #menu ul li{
+         float:none;
+         }
+         #header{
+         height:auto;
+         }
+         #logo{
+         float:none;
+         width:100%;
+         text-align:center;
+         }
+         #menu{
+         float:none;
+         width:100%;
+         text-align:center;
+         }
+         #menu ul{
+         float:none;
+         padding-left:0px;
+         }
+         #menu ul li{
+         margin-bottom:20px;
+         }
+         }
+         @media(max-width:800px){
+            #main-section{ 
+              padding-left:10px;
+              padding-right:10px;
+            }
+           .sub-items{
+            float:none;
+            width:100%;
+            margin-right:0px;
+            margin-bottom:40px;
+           }
+           .project-items{
+             float:none;
+             width:100%;
+             margin-bottom:40px;
+           }
+           .footer-items{
+             float:none;
+             width:100%;
+             margin-bottom:40px;
+           }
+           .footer-items h4{
+             margin-bottom:10px;
+           }
+         }
+      </style>
+   </head>
+   <body>
+      <div id="header" class="clearfix">
+         <div id="logo">
+            <img src="./assets/images/logo.png" alt="Logo" />
+         </div>
+         <div id="menu" class="clearfix">
+            <ul class="clearfix">
+               <li>Home</li>
+               <li>About</li>
+               <li>Journal</li>
+               <li>Services</li>
+               <li>Features</li>
+               <li>Contact us</li>
+            </ul>
+         </div>
+      </div>
+      <div id="main-image">
+         <img src="./assets/images/background-image.png" alt="Main Image" />
+      </div>
+      <div id="main-section">
+         <div id="item-container" class="clearfix">
+            <div class="sub-items">
+               <img src="./assets/images/icon-1.png" alt="Item 1" />
+               <h4>Pellentesque</h4>
+               <p>Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+            </div>
+            <div class="sub-items">
+               <img src="./assets/images/icon-2.png" alt="Item 1" />
+               <h4>Consectetur</h4>
+               <p>Vestibulum id ligula porta euismod semper. Aenean lacinia bibe</p>
+            </div>
+            <div class="sub-items">
+               <img src="./assets/images/icon-3.png" alt="Item 1" />
+               <h4>Tristiquet</h4>
+               <p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+            <div class="sub-items">
+               <img src="./assets/images/icon-4.png" alt="Item 1" />
+               <h4>Fermentum</h4>
+               <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venena.</p>
+            </div>
+         </div>
+         <h2 id="latest-work-heading">Our Latest Work</h2>
+         <div id="project-container" class="clearfix">
+            <div class="project-items">
+               <img src="./assets/images/snap-1.png" alt="Project 1" />
+               <h3>Nobis Business Card</h3>
+               <h4>Business Card, Graphic</h4>
+               <p>Sed posuere consectetur est at lobortis. Porta sagittis lacus v</p>
+            </div>
+            <div class="project-items">
+               <img src="./assets/images/snap-2.png" alt="Project 2" />
+               <h3>New Fun Project</h3>
+               <h4>Web Design, Application</h4>
+               <p>Nulla vitae elit libero, a pharetra augue. Donec sed odio dui.
+               </p>
+            </div>
+            <div class="project-items">
+               <img src="./assets/images/snap-3.png" alt="Project 3" />
+               <h3>Passionaries Branding Cover</h3>
+               <h4>Branding, Graphic Design</h4>
+               <p>Curabitur blandit tempus porttitor. Donec id elit non mi porta
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="customer-review-container">
+         <img src="./assets/images/quote.png" alt="Quote" />
+         <p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at <br />
+            eget metus. Duis mollis, est non commodo luctus erat porttitor.
+         </p>
+      </div>
+      <div id="footer">
+         <div id="sub-footer-container" class="clearfix">
+            <div class="footer-items">
+               <h4>Get In Touch</h4>
+               <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.</p>
+               <p>Moonshine Street No: 14/05 <br />
+                  Light City, Jupiter <br />
+                  0247 541 65 87 <br />
+                  support@longwave.com
+               </p>
+            </div>
+            <div class="footer-items" id="footer-twitter-item">
+               <h4>Twitter</h4>
+               <p>
+                  <img src="./assets/images/tweet.png" />
+                  Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
+               </p>
+               <p> 		<img src="./assets/images/tweet.png" />Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
+               <p>  		<img src="./assets/images/tweet.png" />Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.</p>
+            </div>
+            <div class="footer-items">
+               <h4>Popular Posts</h4>
+               <p>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor. 14 Nov, 2012</p>
+               <p>Scelerisque nisl consectetur et. 22 May, 2012</p>
+               <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce 15 July, 2012</p>
+            </div>
+            <div class="footer-items">
+               <h4>About Us</h4>
+               <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+               <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus.</p>
+            </div>
+         </div>
+         <p>&copy; 2022 Marble. All Right reserved. Theme by elemis.</p>
+      </div>
+   </body>
+</html>

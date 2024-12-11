@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Layout</title>
+    <style>
+      * {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .clearfix::after {
+        /* overflow: auto; */
+        clear: both;
+        display: table;
+        content: "";
+      }
+      header {
+        background-color: #151515;
+        color: white;
+      }
+      .container {
+        width: 80%;
+        /* 0px top-bottom se left right se auto */
+        margin: 0px auto;
+      }
+      #logo {
+        width: 25%;
+        float: left;
+      }
+      nav {
+        float: right;
+        width: 60%;
+      }
+      nav ul li {
+        list-style-type: none;
+        float: left;
+        font-size: 20px;
+        margin-top: 22px;
+        margin-right: 20px;
+      }
+      nav ul li:nth-child(even) {
+        color: green;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      #bg-image-section {
+        background-image: url("./assets/images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 400px;
+        padding-top: 90px;
+
+        box-sizing: border-box;
+        color: white;
+      }
+      #bg-image-section h2 {
+        font-size: 56px;
+        font-weight: 100;
+      }
+      #bg-image-section h4 {
+        font-weight: 100;
+        margin: 15px 0px;
+        font-size: 20px;
+      }
+      #bg-image-section button {
+        background-color: #41a308;
+        padding: 10px 18px;
+        font-size: 18px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+      }
+      .services-items {
+        width: 30%;
+        float: left;
+        text-align: center;
+        margin-right: 3.7%;
+      }
+      .services-items:last-child {
+        margin-right: 0px;
+      }
+      #main-section {
+        margin-top: 40px;
+      }
+      .services-items h3 {
+        color: #888888;
+        margin: 10px 0px;
+      }
+      .services-items p {
+        color: #888888;
+      }
+      #services-container {
+        margin-bottom: 60px;
+      }
+      .line-container {
+        position: relative;
+      }
+      .line-container button {
+        background-color: #008000;
+        padding: 10px 18px;
+        width: 300px;
+        font-size: 18px;
+        color: white;
+        border: none;
+        position: absolute;
+        left: 38%;
+        top: -20px;
+        font-weight: 600;
+      }
+      #first-child-of-review {
+        float: left;
+        width: 20%;
+      }
+      #second-child-of-review {
+        float: right;
+        width: 60%;
+        color: #888888;
+        font-style: italic;
+      }
+      #second-child-of-review img {
+        margin-bottom: 25px;
+      }
+      #reviews {
+        margin-bottom: 40px;
+      }
+      #footer-first-item {
+        float: left;
+        width: 70%;
+      }
+      #footer-second-item {
+        float: right;
+        width: 30%;
+      }
+      footer {
+        margin-top: 60px;
+      }
+      .contact-info {
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .contact-info span {
+        position: absolute;
+        top: 7px;
+        left: 45px;
+        color: #888888;
+      }
+
+      @media (max-width: 1230px) {
+        header {
+          padding-bottom: 20px;
+        }
+        #logo {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+        nav {
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+        nav ul li {
+          float: none;
+        }
+        .services-items {
+          float: none;
+          width: 100%;
+          margin-right: 0px;
+          margin-bottom: 60px;
+        }
+      }
+
+      @media (max-width: 900px) {
+        #bg-image-section {
+          height: 450px;
+          background-size: cover;
+        }
+        #second-child-of-review,
+        #first-child-of-review {
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+        #second-child-of-review {
+          padding-top: 20px;
+        }
+
+        /* #first-child-of-review {
+          float: none;
+          width: 100%;
+          text-align: center;
+        } */
+        #first-child-of-review img {
+          width: 80%;
+        }
+
+        #footer-first-item {
+          float: none;
+          width: 100%;
+
+          padding-left: 160px;
+        }
+        #footer-second-item {
+          float: none;
+          width: 100%;
+          text-align: center;
+          margin-top: 40px;
+        }
+        #footer-second-item img {
+          width: 60%;
+        }
+        .line-container button {
+          left: 28%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container clearfix">
+        <div id="logo">
+          <img src="./assets/images/logo.png" />
+        </div>
+        <nav>
+          <ul class="clearfix">
+            <li>Home</li>
+            <li>/</li>
+            <li>About</li>
+            <li>/</li>
+            <li>Portfolio</li>
+            <li>/</li>
+            <li>Clients</li>
+            <li>/</li>
+            <li>Contact</li>
+            <li>/</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="bg-image-section">
+      <div class="container">
+        <h2>WE KNOW WEB DESIGN</h2>
+        <h4>
+          With over 15 years experience you can be sure your <br />
+          website is in safe hands
+        </h4>
+        <button>VIEW OUR WORK</button>
+      </div>
+    </section>
+
+    <section id="main-section">
+      <div class="container">
+        <div id="services-container" class="clearfix">
+          <div class="services-items">
+            <img src="./assets/images/cs-1.png" />
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              temporibus fuga saepe assumenda nostrum, rem veritatis, architecto
+              quaerat
+            </p>
+          </div>
+
+          <div class="services-items">
+            <img src="./assets/images/cs-2.png" />
+            <h3>E-Commerce</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              temporibus fuga saepe assumenda nostrum, rem veritatis, architecto
+              quaerat
+            </p>
+          </div>
+
+          <div class="services-items">
+            <img src="./assets/images/cs-3.png" />
+            <h3>Seo</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+              temporibus fuga saepe assumenda nostrum, rem veritatis, architecto
+              quaerat
+            </p>
+          </div>
+        </div>
+
+        <div class="line-container">
+          <hr />
+          <button>WHAT OUR CLIENTS SAY</button>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div id="reviews" class="clearfix">
+          <div id="first-child-of-review">
+            <img src="./assets/images/head.png" />
+          </div>
+          <div id="second-child-of-review">
+            <img src="./assets/images/quote.png" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              ratione dolores similique voluptas explicabo quas nisi, officiis
+              eius quo nemo magni facilis
+            </p>
+          </div>
+        </div>
+
+        <div class="line-container">
+          <hr />
+          <button>DROP US A LINE</button>
+        </div>
+
+        <footer class="clearfix">
+          <div id="footer-first-item">
+            <div class="contact-info">
+              <img src="./assets/images/call.png" />
+              <span>555 555 5555</span>
+            </div>
+
+            <div class="contact-info">
+              <img src="./assets/images/email.png" />
+              <span>hello@whatever.com</span>
+            </div>
+
+            <div class="contact-info">
+              <img src="./assets/images/map-icon.png" />
+              <span>Leaf Studios Times Square NY</span>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <img src="./assets/images/logo-sprite.png" />
+          </div>
+          <div id="footer-second-item">
+            <img src="./assets/images/map.png" />
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

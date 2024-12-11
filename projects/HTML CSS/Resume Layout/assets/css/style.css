@@ -1,0 +1,52 @@
+#sidebar{
+    background-color: #bd5d38;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    cursor: pointer;
+    color: #e1b6a5;
+}
+#sidebar ul li:hover{
+    color: white;
+}
+#profile-image{
+    border: 10px solid #ca7d60;
+}
+.custom-h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.custom-text-color{
+    color: #bd5d38;
+}
+.custom-h3{
+    font-size: 1.2rem;
+    
+}
+.custom-paragraph-color{
+    color: #707981;
+}
+.custom-text-color{
+    color: #bd5d38;
+}
+.custom-underline{
+    text-decoration: underline;
+}
+#right-side{
+    padding-left: 2rem;
+}
+.social-icons{
+    margin: 4rem 0px;
+}
+.social-icon i{
+    background-color: #495057;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: white;
+}
